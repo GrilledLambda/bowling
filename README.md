@@ -13,7 +13,7 @@
 
 ---
 
-
+# State Machine for a frame
 
 
 ```mermaid
