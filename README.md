@@ -19,15 +19,15 @@
 ```mermaid
 graph LR
    
-   A((Start))-- roll -->B((OPEN))
-   A((Start))-- roll -->C((Strike))
+   A((Start))-- roll <10  -->B((OPEN))
+   A((Start))-- roll == 10-->C((Strike))
    
-   B((OPEN)) -- roll -->D((Spare))
-   B((OPEN)) -- roll -->E((Done))
+   B((OPEN)) -- roll sum == 10 -->D((Spare))
+   B((OPEN)) -- roll sum <= 10 -->E((Done))
    
    D((Spare)) -- roll -->E((Done))
 
-   C((Strike)) -- roll --> C((Strike))
+   C((Strike)) -- roll == 10 --> C((Strike))
    C((Strike)) -- roll --> E((Done))
 
    E((Done)) -- roll --> E((Done))

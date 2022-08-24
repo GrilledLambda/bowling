@@ -9,7 +9,7 @@ defmodule BowlingTest do
   test "when a spare is scored" do
     assert Bowling.score([3, 7, 5, 0]) == 15
   end
-
+cd DOc
   test "when a strike is scored" do
     assert Bowling.score([10, 5, 4]) == 28
   end
