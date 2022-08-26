@@ -10,7 +10,7 @@
   - If you roll a strike on the first attempt you get two more rolls.
   - If you roll a spare in the first two attempts you get one more roll.
   - If you roll an open frame, your turn is over.
-
+ 
 ---
 
 # State Machine for a frame
